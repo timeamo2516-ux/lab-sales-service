@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/techstore}
+    username: ${DB_USER:techstore}
+    password: ${DB_PASSWORD:techstore}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
