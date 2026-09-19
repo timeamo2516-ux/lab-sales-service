@@ -13,4 +13,11 @@ Ejemplo:
 {"productId":1,"productName":"Laptop Lenovo","quantity":2,"unitPrice":2499.90}
 ```
 
+## Compra
+
+`POST /api/sales`
+```json
+{"productId":1,"quantity":2}
+```
+
 Puerto local: `8082`.
